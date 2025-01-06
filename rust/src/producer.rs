@@ -177,7 +177,7 @@ impl Producer {
                                 Settings(command) => {
                                     let option = &mut producer_option.write();
                                     Self::handle_settings_command(command, option);
-                                    info!(logger, "handle setting command success.");
+                                    // info!(logger, "handle setting command success.");
                                 }
                                 _ => {
                                     warn!(logger, "unimplemented command {:?}", command);
